@@ -1,5 +1,7 @@
 # Arkanoid
 
+My main code is in my main.py file, and was made using Python.
+
 This program uses the arcade library, an outside program, to provide the graphics window and the run loop for the game.
 
 There are 3 primary objects that comprise the game: the "MyGame" object, the ball, and the paddle. The run loop updates the objects in the game approximately 60 times a second, and each object contains logic for updating the objects state and determining how it is represented in the graphics window. The purpose of the game is to keep a bouncing ball from falling through the bottom of a graphics window by moving a paddle around the bottom of the window  to bounce the ball back up. 

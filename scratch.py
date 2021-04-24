@@ -1,5 +1,4 @@
-
-  def check_collision(self):
+    def check_collision(self):
         """ Determine if the ball hit the paddle"""
         if self.paddle.get_bottom() < self.ball.get_bottom() <= self.paddle.get_top():
             if self.ball.get_left() >= self.paddle.get_left():
