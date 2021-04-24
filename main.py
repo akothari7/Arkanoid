@@ -62,6 +62,7 @@ class Ball:
 
     def get_bottom(self):
         return self.pos_y - self.radius
+
     def get_top(self):
         return self.pos_y + self.radius
 
