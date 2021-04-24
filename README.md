@@ -1,6 +1,6 @@
 # Arkanoid
 
-My main code is in my main.py file, and was made using Python.
+My game code is in my main.py file, and was made using Python.
 
 This program uses the arcade library, an outside program, to provide the graphics window and the run loop for the game.
 
