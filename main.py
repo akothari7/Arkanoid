@@ -177,46 +177,42 @@ class MyGame(arcade.Window):
                 if self.ball.get_right() - self.ball.radius <= self.paddle.get_right():
                     self.ball.vel_y = self.ball.vel_y + (self.ball.vel_y * -2)
                     if self.ball.vel_x > 0:
-                        if self.paddle.get_left() < self.ball.pos_x < self.paddle.get_left() + (self.paddle.width / 10):
+                        if self.paddle.get_left() < self.ball.pos_x < self.paddle.get_left() + (self.paddle.width / 9):
                             self.ball.vel_x = 7
-                        elif self.paddle.get_left() + (self.paddle.width / 10) <= self.ball.pos_x < self.paddle.get_left() + ((self.paddle.width / 10) * 2):
+                        elif self.paddle.get_left() + (self.paddle.width / 9) <= self.ball.pos_x < self.paddle.get_left() + ((self.paddle.width / 9) * 2):
                             self.ball.vel_x = 6
-                        elif self.paddle.get_left() + ((self.paddle.width / 10) * 2) <= self.ball.pos_x < self.paddle.get_left() + ((self.paddle.width / 10) * 3):
+                        elif self.paddle.get_left() + ((self.paddle.width / 9) * 2) <= self.ball.pos_x < self.paddle.get_left() + ((self.paddle.width / 9) * 3):
                             self.ball.vel_x = 5
-                        elif self.paddle.get_left() + ((self.paddle.width / 10) * 3) <= self.ball.pos_x < self.paddle.get_left() + ((self.paddle.width / 10) * 4):
+                        elif self.paddle.get_left() + ((self.paddle.width / 9) * 3) <= self.ball.pos_x < self.paddle.get_left() + ((self.paddle.width / 9) * 4):
                             self.ball.vel_x = 4
-                        elif self.paddle.get_left() + ((self.paddle.width / 10) * 4) <= self.ball.pos_x < self.paddle.get_left() + ((self.paddle.width / 10) * 5):
+                        elif self.paddle.get_left() + ((self.paddle.width / 9) * 4) <= self.ball.pos_x < self.paddle.get_left() + ((self.paddle.width / 9) * 5):
                             self.ball.vel_x = 3
-                        elif self.paddle.get_left() + ((self.paddle.width / 10) * 5) <= self.ball.pos_x < self.paddle.get_left() + ((self.paddle.width / 10) * 6):
-                            self.ball.vel_x = 3
-                        elif self.paddle.get_left() + ((self.paddle.width / 10) * 6) <= self.ball.pos_x < self.paddle.get_left() + ((self.paddle.width / 10) * 7):
+                        elif self.paddle.get_left() + ((self.paddle.width / 9) * 5) <= self.ball.pos_x < self.paddle.get_left() + ((self.paddle.width / 9) * 6):
                             self.ball.vel_x = 4
-                        elif self.paddle.get_left() + ((self.paddle.width / 10) * 7) <= self.ball.pos_x < self.paddle.get_left() + ((self.paddle.width / 10) * 8):
+                        elif self.paddle.get_left() + ((self.paddle.width / 9) * 6) <= self.ball.pos_x < self.paddle.get_left() + ((self.paddle.width / 9) * 7):
                             self.ball.vel_x = 5
-                        elif self.paddle.get_left() + ((self.paddle.width / 10) * 8) <= self.ball.pos_x < self.paddle.get_left() + ((self.paddle.width / 10) * 9):
+                        elif self.paddle.get_left() + ((self.paddle.width / 9) * 7) <= self.ball.pos_x < self.paddle.get_left() + ((self.paddle.width / 9) * 8):
                             self.ball.vel_x = 6
-                        elif self.paddle.get_left() + ((self.paddle.width / 10) * 9) <= self.ball.pos_x < self.paddle.get_right():
+                        elif self.paddle.get_left() + ((self.paddle.width / 9) * 8) <= self.ball.pos_x < self.paddle.get_right():
                             self.ball.vel_x = 7
                     else:
-                        if self.ball.pos_x <= self.paddle.get_left() + (self.paddle.width / 10):
+                        if self.ball.pos_x <= self.paddle.get_left() + (self.paddle.width / 9):
                             self.ball.vel_x = -7
-                        elif self.paddle.get_left() + (self.paddle.width / 10) < self.ball.pos_x < self.paddle.get_left() + ((self.paddle.width / 10) * 2):
+                        elif self.paddle.get_left() + (self.paddle.width / 9) < self.ball.pos_x < self.paddle.get_left() + ((self.paddle.width / 9) * 2):
                             self.ball.vel_x = -6
-                        elif self.paddle.get_left() + ((self.paddle.width / 10) * 2) <= self.ball.pos_x < self.paddle.get_left() + ((self.paddle.width / 10) * 3):
+                        elif self.paddle.get_left() + ((self.paddle.width / 9) * 2) <= self.ball.pos_x < self.paddle.get_left() + ((self.paddle.width / 9) * 3):
                             self.ball.vel_x = -5
-                        elif self.paddle.get_left() + ((self.paddle.width / 10) * 3) <= self.ball.pos_x < self.paddle.get_left() + ((self.paddle.width / 10) * 4):
+                        elif self.paddle.get_left() + ((self.paddle.width / 9) * 3) <= self.ball.pos_x < self.paddle.get_left() + ((self.paddle.width / 9) * 4):
                             self.ball.vel_x = -4
-                        elif self.paddle.get_left() + ((self.paddle.width / 10) * 4) <= self.ball.pos_x < self.paddle.get_left() + ((self.paddle.width / 10) * 5):
+                        elif self.paddle.get_left() + ((self.paddle.width / 9) * 4) <= self.ball.pos_x < self.paddle.get_left() + ((self.paddle.width / 9) * 5):
                             self.ball.vel_x = -3
-                        elif self.paddle.get_left() + ((self.paddle.width / 10) * 5) <= self.ball.pos_x < self.paddle.get_left() + ((self.paddle.width / 10) * 6):
-                            self.ball.vel_x = -3
-                        elif self.paddle.get_left() + ((self.paddle.width / 10) * 6) <= self.ball.pos_x < self.paddle.get_left() + ((self.paddle.width / 10) * 7):
+                        elif self.paddle.get_left() + ((self.paddle.width / 9) * 5) <= self.ball.pos_x < self.paddle.get_left() + ((self.paddle.width / 9) * 6):
                             self.ball.vel_x = -4
-                        elif self.paddle.get_left() + ((self.paddle.width / 10) * 7) <= self.ball.pos_x < self.paddle.get_left() + ((self.paddle.width / 10) * 8):
+                        elif self.paddle.get_left() + ((self.paddle.width / 9) * 6) <= self.ball.pos_x < self.paddle.get_left() + ((self.paddle.width / 9) * 7):
                             self.ball.vel_x = -5
-                        elif self.paddle.get_left() + ((self.paddle.width / 10) * 8) <= self.ball.pos_x < self.paddle.get_left() + ((self.paddle.width / 10) * 9):
+                        elif self.paddle.get_left() + ((self.paddle.width / 9) * 7) <= self.ball.pos_x < self.paddle.get_left() + ((self.paddle.width / 9) * 8):
                             self.ball.vel_x = -6
-                        elif self.paddle.get_left() + ((self.paddle.width / 10) * 9) <= self.ball.pos_x < self.paddle.get_right():
+                        elif self.paddle.get_left() + ((self.paddle.width / 9) * 8) <= self.ball.pos_x < self.paddle.get_right():
                             self.ball.vel_x = -7
 
                     # print(self.ball.vel_x)
